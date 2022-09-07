@@ -8,10 +8,10 @@ jobs:
     - name: Test private action
       run: |
         echo "heyyy"
-        ls
+        pwd ./
     - name: Hello world actions step
       id: hello
-      uses: ./ashthetis/my-javascript-action@main
+      uses: ashthetis/my-javascript-action@main
       with:
         who-to-great: 'ashthetis'
     - name: Get the output time
