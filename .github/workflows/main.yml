@@ -8,7 +8,9 @@ jobs:
     - name: Test private action
       run: |
         echo "heyyy"
-        pwd ./
+        cd ./
+        ls 
+        pwd
     - name: Hello world actions step
       id: hello
       uses: ashthetis/my-javascript-action@main
