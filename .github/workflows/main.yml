@@ -5,9 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-#     - name: Test private action
-#       run: |
-#         cat ./ashthetis/my-javascript-action/main/action.yml
+    - name: Test private action
+      run: |
+        echo "heyyy"
+        ls
     - name: Hello world actions step
       id: hello
       uses: ./ashthetis/my-javascript-action@main
