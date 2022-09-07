@@ -15,6 +15,6 @@ jobs:
       id: hello
       uses: ashthetis/my-javascript-action@main
       with:
-        who-to-great: 'ashthetis'
+        who-to-greet: 'ashthetis'
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time}}"
