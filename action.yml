@@ -1,13 +1,25 @@
-name: 'Hello World'
-description: 'Greet someone and record the name'
-inputs:
-  who-to-greet: #id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-  output:
-    time:
-      description: 'The time we greeted you'
-  runs:
-    using: 'node12'
-    main: 'index.js'
+name: Test
+description: 'composite run action'
+
+runs:
+  using: "composite"
+  steps: 
+    steps:
+    - name: Echo
+      shell: bash
+      run: |
+        echo Heyyyyy
+
+# name: 'Hello World'
+# description: 'Greet someone and record the name'
+# inputs:
+#   who-to-greet: #id of input
+#     description: 'Who to greet'
+#     required: true
+#     default: 'World'
+#   output:
+#     time:
+#       description: 'The time we greeted you'
+#   runs:
+#     using: 'node12'
+#     main: 'index.js'
