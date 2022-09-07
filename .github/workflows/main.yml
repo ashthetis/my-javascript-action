@@ -10,7 +10,7 @@ jobs:
 #         cat ./ashthetis/my-javascript-action/main/action.yml
     - name: Hello world actions step
       id: hello
-      uses: ashthetis/my-javascript-action@main
+      uses: ./ashthetis/my-javascript-action@main
       with:
         who-to-great: 'ashthetis'
     - name: Get the output time
